@@ -1,6 +1,6 @@
 /node_modules
 /public/hot
-#/public/storage
+/public/storage
 /public/store_file
 /public/images_tmp
 /public/cache

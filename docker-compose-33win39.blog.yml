@@ -4,14 +4,14 @@ services:
     app:
         build:
             context: .
-            dockerfile: docker/php8.1/33win03Blog/Dockerfile
-        container_name: 33win03_app
+            dockerfile: docker/php8.1/33win39Blog/Dockerfile
+        container_name: 33win39_app
         working_dir: /var/www/html
         volumes:
             - ./:/var/www/html
             - app_storage:/var/www/html/storage
         ports:
-            - "8080:80"
+            - "8081:80"
         networks:
             - 33win_backend
 

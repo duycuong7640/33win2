@@ -36,10 +36,10 @@ RUN docker-php-ext-enable opcache
 WORKDIR /var/www/html
 
 # Copy application source files
-COPY ./ /var/www/html
+COPY .. /var/www/html
 
 # Copy Apache vhost file
-COPY ./docker/php8.1/apache.conf /etc/apache2/sites-available/000-default.conf
+COPY ./docker/php8.1/33winBlog/apache.conf /etc/apache2/sites-available/000-default.conf
 
 # Copy entrypoint script
 COPY ./docker/php8.1/entrypoint.sh /usr/local/bin/entrypoint.sh

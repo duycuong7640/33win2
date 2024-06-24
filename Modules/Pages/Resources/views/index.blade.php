@@ -3,7 +3,7 @@
 @section('content')
     <div class="p-0 d-flex flex-wrap" style="justify-content: space-between;background: #680000;">
         <div class="siderbar">
-            <div class="logo" style="background: url('{{ !empty($data['commonSetting']["logo"]->thumbnail) ? $data['commonSetting']["logo"]->thumbnail : '' }}') no-repeat center;">
+            <div class="logo" style="background: url('{{ !empty($data['commonSetting']["logo"]->thumbnail) ? str_replace('img/!/', env('IMAGE_IMG'), $data['commonSetting']["logo"]->thumbnail) : '' }}') no-repeat center;">
                 <a href="#"></a>
             </div>
             <div class="header mt-5">

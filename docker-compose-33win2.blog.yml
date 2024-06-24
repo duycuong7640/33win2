@@ -11,7 +11,7 @@ services:
             - ./:/var/www/html
             - app_storage:/var/www/html/storage
         ports:
-            - "80:80"
+            - "8087:80"
         networks:
             - 33win_backend
 

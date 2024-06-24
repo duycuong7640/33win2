@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+    app:
+        build:
+            context: .
+            dockerfile: docker/php8.1/33winBlog/Dockerfile
+        container_name: 33win_app
+        working_dir: /var/www/html
+        volumes:
+            - ./:/var/www/html
+            - app_storage:/var/www/html/storage
+        ports:
+            - "80:80"
+        networks:
+            - 33win_backend
+
+networks:
+    33win_backend:
+        external: true
+
+volumes:
+    app_storage:

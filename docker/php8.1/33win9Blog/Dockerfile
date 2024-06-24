@@ -24,7 +24,15 @@ RUN docker-php-ext-configure gd --with-jpeg --with-freetype \
     && docker-php-ext-install -j$(nproc) gd
 
 # Enable Apache mod_rewrite
-RUN a2enmod rewrite
+#RUN a2enmod rewrite
+# Enable Apache modules
+RUN a2enmod rewrite \
+    && a2enmod proxy \
+    && a2enmod proxy_http \
+    && a2enmod proxy_balancer \
+    && a2enmod lbmethod_byrequests \
+    && a2enmod headers \
+    && a2enmod ssl
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer

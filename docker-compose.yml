@@ -29,7 +29,7 @@ services:
         container_name: 33win_db
         environment:
             MYSQL_ROOT_PASSWORD: Idsa32ADsaWsdawW
-            MYSQL_DATABASE: 33win2
+            MYSQL_DATABASE: 33win_2
         volumes:
             - db_data:/var/lib/mysql
         ports:

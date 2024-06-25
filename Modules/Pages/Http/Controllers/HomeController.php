@@ -27,7 +27,7 @@ class HomeController extends Controller
             $data['commonSetting'] = $this->commonSetting->commonDataSite(['active' => 'home']);
             $data['common'] = Helpers::metaHead(!empty($data['commonSetting']['setting']) ? $data['commonSetting']['setting'] : []);
             return view('pages::index')->with('data', $data);
-        } catch (\Exception $e) {
+        } catch (\Exception $e) {Helpers::pre($e->getMessage());
             abort(500);
         }
     }

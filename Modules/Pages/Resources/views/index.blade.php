@@ -225,6 +225,9 @@
                 <section class="content-home container mt-3" style="color:white;">
                     {!! !empty($data['commonSetting']['setting']['home_content']) ? $data['commonSetting']['setting']['home_content'] : '' !!}
                 </section>
+                <style type="text/css">
+                    .content-home ul, .content-home ol{padding-left: 30px;}
+                </style>
             </div>
             <footer class="text-grey font-13 w-100 px-0">
                 <section class="footer-top">

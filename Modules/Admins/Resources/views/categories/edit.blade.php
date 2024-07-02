@@ -32,6 +32,10 @@
                                 <input type="text" name="title" value="{{ $data['detail']->title }}"
                                        class="form-control" placeholder=""/>
                             </div>
+                            <div class="form-group">
+                                <label>Url</label>
+                                <input type="text" name="redirect_url" value="{{ $data['detail']->redirect_url }}" class="form-control" placeholder=""/>
+                            </div>
                             {{--                            <div class="form-group">--}}
                             {{--                                <label>Mô tả</label>--}}
                             {{--                                <textarea name="description" placeholder="Mô tả" rows="4"--}}

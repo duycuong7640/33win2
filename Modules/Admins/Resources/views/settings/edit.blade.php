@@ -94,6 +94,12 @@
                                        class="form-control"
                                        placeholder=""/>
                             </div>
+                            <div class="form-group">
+                                <label>Link đăng ký trải nghiệm</label>
+                                <input type="text" name="link3" value="{{ $data['detail']->link3 }}"
+                                       class="form-control"
+                                       placeholder=""/>
+                            </div>
                             <div class="form-group" style="display: none;">
                                 <label>Địa chỉ</label>
                                 <input type="text" name="address" value="{{ $data['detail']->address }}"

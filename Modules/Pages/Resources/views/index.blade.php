@@ -17,7 +17,7 @@
                                 href="{{ !empty($data['commonSetting']['setting']['link2']) ? $data['commonSetting']['setting']['link2'] : '' }}">Đăng
                                 ký</a>
                         </button>
-                        <div class="trai-nghiem" href="{{ !empty($data['commonSetting']['setting']['link3']) ? $data['commonSetting']['setting']['link3'] : '' }}"><i></i> <span class="ng-scope ">Đăng ký trải nghiệm</span>
+                        <div class="trai-nghiem" href="{{ !empty($data['commonSetting']['setting']['link4']) ? $data['commonSetting']['setting']['link4'] : '' }}"><i></i> <span class="ng-scope ">Đăng ký trải nghiệm</span>
                         </div>
                     </div>
                 </div>

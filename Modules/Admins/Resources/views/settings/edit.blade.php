@@ -96,7 +96,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Link đăng ký trải nghiệm</label>
-                                <input type="text" name="link3" value="{{ $data['detail']->link4 }}"
+                                <input type="text" name="link4" value="{{ $data['detail']->link4 }}"
                                        class="form-control"
                                        placeholder=""/>
                             </div>

@@ -21,6 +21,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $request = app(\Illuminate\Http\Request::class);
         $domain = $request->getHost();
+        echo $domain;
         if (
             $domain == '33win2' ||
             $domain == '33win2.blog' ||
@@ -32,7 +33,7 @@ class AppServiceProvider extends ServiceProvider
             $domain == '33win5.org' ||
             $domain == 'www.33win5.org' ||
             $domain == '33win7.blog' ||
-            $domain == 'www.33win7.blog' || 
+            $domain == 'www.33win7.blog' ||
             $domain == '33win8.blog' ||
             $domain == 'www.33win8.blog' ||
             $domain == '33win99.org' ||

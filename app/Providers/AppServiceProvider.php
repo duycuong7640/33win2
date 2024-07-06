@@ -21,7 +21,6 @@ class AppServiceProvider extends ServiceProvider
     {
         $request = app(\Illuminate\Http\Request::class);
         $domain = $request->getHost();
-        echo $domain;
         if (
             $domain == '33win2' ||
             $domain == '33win2.blog' ||

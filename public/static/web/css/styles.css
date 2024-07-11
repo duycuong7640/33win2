@@ -17633,3 +17633,11 @@ ul.list-menu li a:before {
 }
 
 .content-home ul, .content-home ol{padding-left: 30px;}
+
+@media(max-width: 768px) {
+    .a-link-mb {
+        cursor: pointer;
+        display: block;
+        width: 100%;
+    }
+}

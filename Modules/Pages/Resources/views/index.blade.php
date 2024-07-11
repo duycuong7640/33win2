@@ -11,12 +11,12 @@
                 <div class="user">
                     <div class="ng-scope button-action">
                         <h1>{{ !empty($data['commonSetting']['setting']['name']) ? $data['commonSetting']['setting']['name'] : '' }}</h1>
-                        <a href="{{ !empty($data['commonSetting']['setting']['link1']) ? $data['commonSetting']['setting']['link1'] : '' }}" style="cursor: pointer;">
+                        <a href="{{ !empty($data['commonSetting']['setting']['link1']) ? $data['commonSetting']['setting']['link1'] : '' }}" class="a-link-mb" style="cursor: pointer;">
                             <button type="button" class="ng-scope dang-nhap">Đăng
                                 nhập
                             </button>
                         </a>
-                        <a href="{{ !empty($data['commonSetting']['setting']['link2']) ? $data['commonSetting']['setting']['link2'] : '' }}" style="cursor: pointer;">
+                        <a href="{{ !empty($data['commonSetting']['setting']['link2']) ? $data['commonSetting']['setting']['link2'] : '' }}" class="a-link-mb" style="cursor: pointer;">
                             <button type="button" class="ng-scope dang-ky">Đăng
                                 ký
                             </button>

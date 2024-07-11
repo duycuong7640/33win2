@@ -3,21 +3,27 @@
 @section('content')
     <div class="p-0 d-flex flex-wrap" style="justify-content: space-between;background: #680000;">
         <div class="siderbar">
-            <div class="logo" style="background: url('{{ !empty($data['commonSetting']["logo"]->thumbnail) ? str_replace('img/!/', env('IMAGE_IMG'), $data['commonSetting']["logo"]->thumbnail) : '' }}') no-repeat center;">
+            <div class="logo"
+                 style="background: url('{{ !empty($data['commonSetting']["logo"]->thumbnail) ? str_replace('img/!/', env('IMAGE_IMG'), $data['commonSetting']["logo"]->thumbnail) : '' }}') no-repeat center;">
                 <a href="#"></a>
             </div>
             <div class="header mt-5">
                 <div class="user">
                     <div class="ng-scope button-action">
                         <h1>{{ !empty($data['commonSetting']['setting']['name']) ? $data['commonSetting']['setting']['name'] : '' }}</h1>
-                        <button type="button" class="ng-scope dang-nhap"><a
-                                href="{{ !empty($data['commonSetting']['setting']['link1']) ? $data['commonSetting']['setting']['link1'] : '' }}">Đăng
-                                nhập</a></button>
-                        <button type="button" class="ng-scope dang-ky"><a
-                                href="{{ !empty($data['commonSetting']['setting']['link2']) ? $data['commonSetting']['setting']['link2'] : '' }}">Đăng
-                                ký</a>
-                        </button>
-                        <a class="trai-nghiem" href="{{ !empty($data['commonSetting']['setting']['link4']) ? $data['commonSetting']['setting']['link4'] : '' }}"><i></i> <span class="ng-scope ">Đăng ký trải nghiệm</span>
+                        <a href="{{ !empty($data['commonSetting']['setting']['link1']) ? $data['commonSetting']['setting']['link1'] : '' }}" style="cursor: pointer;">
+                            <button type="button" class="ng-scope dang-nhap">Đăng
+                                nhập
+                            </button>
+                        </a>
+                        <a href="{{ !empty($data['commonSetting']['setting']['link2']) ? $data['commonSetting']['setting']['link2'] : '' }}" style="cursor: pointer;">
+                            <button type="button" class="ng-scope dang-ky">Đăng
+                                ký
+                            </button>
+                        </a>
+                        <a class="trai-nghiem"
+                           href="{{ !empty($data['commonSetting']['setting']['link4']) ? $data['commonSetting']['setting']['link4'] : '' }}"  style="cursor: pointer;"><i></i>
+                            <span class="ng-scope ">Đăng ký trải nghiệm</span>
                         </a>
                     </div>
                 </div>
@@ -226,7 +232,9 @@
                     {!! !empty($data['commonSetting']['setting']['home_content']) ? $data['commonSetting']['setting']['home_content'] : '' !!}
                 </section>
                 <style type="text/css">
-                    .content-home ul, .content-home ol{padding-left: 30px;}
+                    .content-home ul, .content-home ol {
+                        padding-left: 30px;
+                    }
                 </style>
             </div>
             <footer class="text-grey font-13 w-100 px-0">
@@ -274,7 +282,8 @@
                                         <ul class="list-menu">
                                             @foreach($data['commonSetting']['category_list']['ids'] as $key=>$r)
                                                 @if($row['id'] == $r['parent_id'] && !empty($r['parent_id']))
-                                                    <li><a class="ng-scope" href="{{ $r['redirect_url'] }}">{{ $r['title'] }}</a></li>
+                                                    <li><a class="ng-scope"
+                                                           href="{{ $r['redirect_url'] }}">{{ $r['title'] }}</a></li>
                                                 @endif
                                             @endforeach
                                         </ul>

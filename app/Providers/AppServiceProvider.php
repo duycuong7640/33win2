@@ -31,6 +31,8 @@ class AppServiceProvider extends ServiceProvider
             $domain == 'www.33win39.blog' ||
             $domain == '33win5.org' ||
             $domain == 'www.33win5.org' ||
+            $domain == '33win5.blog' ||
+            $domain == 'www.33win5.blog' ||
             $domain == '33win7.blog' ||
             $domain == 'www.33win7.blog' ||
             $domain == '33win8.blog' ||

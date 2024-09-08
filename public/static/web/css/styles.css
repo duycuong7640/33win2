@@ -17634,10 +17634,18 @@ ul.list-menu li a:before {
 
 .content-home ul, .content-home ol{padding-left: 30px;}
 
+.footer-ad{position: fixed; left: 0; right: 0; bottom: 0; z-index: 99999; text-align: center;}
+.wrap-fa{position: relative; display: table; margin: 0 auto;}
+.wrap-fa .a-fa{width: 20px;}
+.wrap-fa .a-fa img{width: 20px; position: absolute; top: -5px; right: -5px;}
+
 @media(max-width: 768px) {
     .a-link-mb {
         cursor: pointer;
         display: block;
         width: 100%;
     }
+    .wrap-fa{width: 95%; margin: 0 auto;}
+    .footer-ad img{width: 100%;}
+    .wrap-fa .a-fa img{width: 15px; position: absolute; top: -5px; right: -5px;}
 }

@@ -303,4 +303,14 @@
             </footer>
         </div>
     </div>
+    <div class="footer-ad" data-show="1">
+        <div class="wrap-fa">
+            <a href="javascript:void(0);" class="a-fa">
+                <img src="{{ asset('static/web/images/Actions-window-close-icon.png') }}" />
+            </a>
+            <a href="https://fb68.blog/f18" target="_blank">
+                <img src="{{ asset('static/web/images/GIF2908v2resize.gif') }}" />
+            </a>
+        </div>
+    </div>
 @endsection
